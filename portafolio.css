@@ -1,0 +1,477 @@
+* {
+    margin: 0;
+    padding: 0;
+    
+  }
+:root{
+  scroll-behavior:smooth;
+}
+ 
+
+.body{
+  background-color: #000;
+}
+.span{
+  color: aqua;
+  font-size:bold;
+  
+} 
+ /* section bienvenida */
+.welcome-portafolio{
+    display: flex;
+    flex-direction: row;
+    background-color: aqua;
+    background-image:url(portafolio/relleno/banner\ welcome.jpg);
+    background-position:center;
+    background-size:cover;
+    background-attachment: fixed;
+    height:40rem;
+    width: 100%;
+ 
+}
+
+.welcome-portafolio H2{
+  color:white;
+  text-align: center;
+  padding: 4rem;
+  font-size:4rem;
+}
+.welcome-portafolio P{
+  color: #fff;
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  font-size:1.2rem ;
+
+  margin: 0 20rem;
+}
+.box-button{
+  
+  justify-content: center;
+  display: flex;
+  flex-direction: row;
+}
+.box-button a{
+  text-decoration: none;
+  color:#fff;
+}
+.box-button .button{
+  padding:0.5rem;
+  width:10rem ;
+  background-color: rgb(15, 96, 177);
+  color: #fff;
+  border-radius:10px;
+  border: 1px rgb(6, 140, 167) solid ;
+  margin: 20px 10px ;
+}
+.box-button .button:hover{
+  background-color: rgb(10, 89, 146) ;
+  border: 3px rgb(6, 140, 167) solid
+}
+.box-button a:hover{
+  color: #000;
+  font-size: large;
+}
+/* welcome porfolio*/
+
+ 
+.Disgraft-portafolio{
+  display: flex;
+  flex-direction:row;
+  justify-content: center;
+  height:800px;
+  
+}
+.content{
+  
+  width:auto;
+  height: auto;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  padding:5rem ;
+  
+
+}
+
+.content h3{
+  text-align: center;
+  color: #1086c5;
+ 
+  font-size:4rem;
+
+}
+.content h4{
+  text-align: center;
+  color: #fff;
+  font-size:2rem;
+}
+/* welcome porfolio */
+
+.container-fotos{
+ 
+  padding:10px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #000;
+}
+
+
+
+.fotos{
+  background-image: url(portafolio/relleno/foto.jpg);
+  background-position:center;
+  background-size:cover;
+  background-attachment: fixed;
+  display:flex;
+  
+  justify-content: space-between;
+  flex-direction: column;
+  padding:3rem;
+  
+ 
+}
+.videos{
+  background-image: url(portafolio/relleno/video.jpg);
+  background-position:center;
+  background-size:cover;
+  
+  background-attachment: fixed;
+  color: #fff;
+  display:flex;
+  justify-content: space-between;
+  flex-direction: column;
+  padding:3rem;
+}
+.identidades-visuales{
+  background-image: url(portafolio/relleno/identidad-visual.jpg);
+  background-position:center;
+  background-size:cover;
+  background-attachment: fixed;
+  color: #fff;
+  display:flex;
+  justify-content: space-between;
+  flex-direction: column;
+  padding:3rem;
+}
+
+.encabezado{
+  text-align: center;
+  margin:20px;
+  color:#fff;
+ 
+}
+.subtitle{
+  color: #fff;
+  margin-left:20px ;
+  padding: 0% 2px;
+  
+}
+.encabezado-p{
+ text-align:start;
+ margin-left:20px ;
+
+
+}
+
+/**carrucel**/
+
+.contenedor{
+  width: 100%;
+  overflow: hidden;
+}
+
+.slider-contenedor{
+  width: 100%;
+  display: flex;
+}
+
+.contenido-slider{
+  width: 100%;
+  height: 600px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.car1{
+  background: linear-gradient(to left, transparent , rgb(2, 56, 65)),
+  url("portafolio/fotos/foto-bienvenida.jpg");
+  background-position:center;
+  background-repeat: no-repeat;
+  background-size:cover;
+  background-attachment: fixed;
+  width:100%;
+  height:80%;
+}
+.car1 h2{
+  text-align: center;
+  justify-content: center;
+  color: white;
+  margin-top:7em;
+
+}
+.car2{
+  background: linear-gradient(to left, transparent , rgb(0, 0, 0)),
+  url("portafolio/videos/foto-video.jpg");
+  background-position:center;
+  background-repeat: no-repeat;
+  background-size:cover;
+  background-attachment: fixed;
+  width:100%;
+  height:80%;
+}
+.car2 h2{
+  text-align:start;
+  padding: 0 1em ;
+  color: white;
+  margin-top:4em;
+
+}
+.car2 p{
+  width:30%;
+  color: white;
+  padding: 0 2em ;
+}
+
+
+
+.car3{
+  background: linear-gradient(to left, transparent , rgb(0, 0, 0)),
+  url("portafolio/fotos/fav5.jpg");
+  background-position:center;
+  background-repeat: no-repeat;
+  background-size:cover;
+  background-attachment: fixed;
+  width:100%;
+  height:80%;
+}
+.car3 h2{
+  text-align:start;
+  padding: 0 1em ;
+  color: white;
+  margin-top:4em;
+
+}
+.car3 p{
+  width:30%;
+  color: white;
+  padding: 0 2em ;
+}
+
+
+
+
+.car4{
+  background: linear-gradient(to left, transparent , rgb(0, 0, 0)),
+  url("portafolio/relleno/identidad-visual.jpg");
+  background-position:center;
+  background-repeat: no-repeat;
+  background-size:cover;
+  background-attachment: fixed;
+  width:100%;
+  height:80%;
+}
+.car4 h2{
+  text-align:start;
+  padding: 0 1em ;
+  color: white;
+  margin-top:4em;
+
+}
+.car4 p{
+  width:30%;
+  color: white;
+  padding: 0 2em ;
+}
+
+.a{
+  background-color:rgb(0, 0, 0);
+  padding:5px;
+  width:6em ;
+  margin-left:30px ;
+  text-decoration: none;
+  color: aqua;
+  border: 2px aqua solid ;
+  transition:1s ease;
+}
+.a:hover{
+  border: 1px rgb(1, 51, 51) solid ;
+  color: rgb(2, 64, 64);
+}
+
+
+
+/**carrucel end**/
+
+
+
+
+.conteniner-section{
+  display: flex;
+  flex-direction:row;
+  max-width:95%;
+  margin: auto;
+  background-color: turquoise;
+}
+.car-imagen{
+  width:100%;
+  background-color: yellow;
+  overflow: hidden;
+}
+.imagen1{
+  overflow: hidden;
+  width:100%;
+  height:420px;
+}
+.texto-car{
+  background-color: thistle;
+  margin: 0 10px;
+  align-items: center ;
+}
+.texto-car h1{
+  text-align:center;
+}
+
+
+@media screen and (max-width:900px){
+  .contenido-slider > img{
+      width: 250px;
+  }
+
+  .contenido-slider > div{
+      width: 40%;
+  }
+
+  .contenido-slider h2{
+      font-size: 23px;
+  }
+}
+
+
+@media screen and (max-width:400px){
+  .contenido-slider{
+     flex-direction: column-reverse;
+  }
+
+  .contenido-slider > div{
+      width: 80%;
+  }
+  .welcome-portafolio{
+    height: auto;
+    max-width:400px;
+    display: flex;
+    flex-direction:column;
+  }
+  .welcome-portafolio P{
+    color: #fff;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    font-size:1.2rem ;
+    margin: 0 0rem;
+  }
+  .box-button .button{
+    padding:0.5rem;
+    width:90%;
+    margin: 10px auto;
+    background-color: rgb(15, 96, 177);
+  }
+  .box-button{
+  
+    justify-content: center;
+    display: flex;
+    flex-direction:column;
+  }
+  
+.contenedor{
+  width: 100%;
+  overflow: hidden;
+}
+
+.slider-contenedor{
+  width: 100%;
+  display: flex;
+}
+
+.contenido-slider{
+  width: 100%;
+  height: 600px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+
+.car1 h2{
+  text-align:center;
+  justify-content: center;
+  color: white;
+  margin-top:7em;
+
+}
+
+.car2 h2{
+  text-align:center;
+  padding: 0 1em ;
+  color: white;
+  margin-top:4em;
+
+}
+.car2 p{
+  width:100%;
+  color: white;
+  padding: 0 2em ;
+}
+
+
+
+
+.car3 h2{
+  text-align:center;
+  padding: 0 1em ;
+  color: white;
+  margin-top:4em;
+
+}
+.car3 p{
+  width:100%;
+  color: white;
+  padding: 0 2em ;
+}
+
+
+
+
+
+.car4 h2{
+  text-align:center;
+  padding: 0 1em ;
+  
+
+}
+.car4 p{
+  width:100%;
+ 
+}
+
+.a{
+  background-color:rgb(0, 0, 0);
+  padding:5px;
+  width:6em ;
+  margin-left:30px ;
+  text-decoration: none;
+  color: aqua;
+  border: 2px aqua solid ;
+  transition:1s ease;
+}
+.a:hover{
+  border: 1px rgb(1, 51, 51) solid ;
+  color: rgb(2, 64, 64);
+}
+
+
+}

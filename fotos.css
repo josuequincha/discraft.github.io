@@ -1,0 +1,246 @@
+*{
+    margin: 0%;
+    text-decoration: none;
+    
+
+}
+body{
+    background-color: black;
+}
+
+.bienvenidad-fotos{
+    background: linear-gradient(to right, blue, pink);
+    background: linear-gradient(to left, transparent, rgb(6, 132, 155)),
+    url("portafolio/fotos/foto-bienvenida.jpg");
+    background-position:5rem -10em;
+    background-size:cover;
+    background-attachment: fixed;
+    height:600px;
+    width:100%;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    
+}
+ 
+.container-contenido{
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    background: linear-gradient(to left, #050505e2 28px, #000000 77%, #000000);
+    width:40% ;
+    height:100% ;
+}
+.botton-volver{
+    width:350px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.botonne{
+    padding:0.5rem;
+    width:10rem ;
+    color: aqua;
+    border-radius:10px;
+    border: none;
+    background-color:rgba(3, 155, 155, 0.975);
+}
+.botonne a{
+    text-decoration: none;
+    color: white;
+    font-size:15px;
+}
+.botonne a:hover{
+    color:rgba(251, 251, 251, 0.323);
+}
+.botonne:hover{
+    background: linear-gradient(to left, #012c40e2 28px, #014e71e2 77%, #014e71e2);
+    border: solid 2px rgb(3, 72, 91);
+}
+.content{
+    width:300px;
+    margin: 0 auto;
+   
+}
+.content h1{
+    color: white;
+    font-family: sans-serif;
+    font-size:30px;
+    text-align: center;
+}
+.content p{
+    text-align: center;
+    color:white;
+    margin:12px 0;
+}
+ 
+.mejores-trabajos{
+
+    width:90% ;
+    padding:0.3rem;
+    margin: auto;
+    font-size: medium;
+    font-family: sans-serif;
+}
+.mejores-trabajos h1{
+    color: white;
+    text-align: center;
+
+}
+.mostrador-fotos{
+    height:400px ;
+    padding:10px ;
+    margin-bottom:4rem;
+
+}
+
+.caja-del-divisor{
+  
+    width:90%;
+    height:100%;
+    margin: 30px auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+}
+
+.imagen{
+    background-color: rgb(0, 0, 0);
+    margin: 1px;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    justify-content:center;
+    width:150px ;
+    transition: all 1s ease ;
+}
+.imagen > .car-img{
+    position:absolute;
+    height: auto;
+    width:400px ;
+    height:100%;
+    object-fit: cover;
+  
+}
+.imagen > .car-img:hover{
+    opacity:60%;
+}
+.imagen:hover{
+    width:300px;
+    
+}
+
+.titulo{
+    color: white;
+    
+    
+}
+
+/***fotos galeria***/
+.galeria-del-fotografo{
+    
+    width:90%;
+    margin: auto;
+    
+}
+.galeria-del-fotografo h2{
+    text-align: center;
+    color:white;
+    font-size:40px;
+    
+}
+.img-gallery{
+    width:90%;
+    margin: auto;
+   display:grid;
+   grid-template-columns:repeat(3,1fr);
+   grid-auto-rows:400px ;
+   padding:20px;
+ 
+   
+}
+.gallery-conteiner img{
+    width:100%;
+    height:100%;
+    object-fit: cover;
+    transition:1s ease;
+}
+.gallery-conteiner img:hover{
+    opacity:50%;
+}
+
+.gallery-conteiner:nth-child(1){
+   
+    grid-row-start: span 2;
+}
+.gallery-conteiner:nth-child(6){
+    grid-row-start: span 2;
+    grid-column-start: span 2;
+}
+
+.gallery-conteiner:nth-child(10){
+    grid-row-start: span 2;
+    grid-column-start: span 2;
+}
+.gallery-conteiner:nth-child(12){
+
+    grid-column-start: span 2;
+    grid-row-start: span 2;
+}
+.gallery-conteiner:nth-child(16){
+    grid-row-start: span 2;
+    grid-column-start: span 2;
+}
+
+
+
+
+
+
+
+/***funcione the js****/
+
+
+.ful-img{
+    position:fixed;
+    width:100%;
+    height:100vh;
+    background-color: rgba(0, 0, 0, 0.935);
+    top: 0;
+    left: 0;
+    display:none;
+    align-items:center;
+    justify-content: center;
+    z-index:10;
+}
+
+.ful-img img{
+    width:90%;
+    max-width:500px;
+}
+.ful-img span{
+    position: absolute;
+    top:5%;
+    right:5%;
+    font-size:30px;
+    color: white;
+    cursor: pointer;
+}
+@media screen and (max-width:400px){
+    .bienvenidad-fotos{
+        height:800px;
+        max-width:100%;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        
+    }
+    .container-contenido{
+        background-color:black ;
+        width:100%;
+        height:100% ;
+    }
+     
+}

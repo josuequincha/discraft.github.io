@@ -1,0 +1,271 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap');
+body{
+    background-color: black;
+}
+
+
+.container-abuelo{
+
+    background-color:black;
+    
+}
+.a{
+    text-decoration: none;
+    transition: 1s;
+    
+}
+
+
+.bienvenida-quienes-somos{
+    
+    display: flex;
+    flex-direction:row;
+    justify-content: space-around;
+    padding:1em;
+    height:600px ;
+}
+.quienes-somos{
+   
+    width:95%;
+    display: flex;
+    flex-direction:row-reverse;
+    justify-content: space-around;
+    align-items: center;
+    height: auto;
+    
+    
+    
+}
+.imagen-discraft img{
+    width:300px;
+}
+.content-welcome{
+    width: 60%;
+    height: auto;
+    color: #5dd1ff;
+}
+.content-welcome P{
+    width:70%;
+}
+.container-quien-soy{
+    
+    width: 100%;
+    height:40em;
+    display: flex;
+    flex-direction:row-reverse;
+    justify-content: space-around;
+    padding:2em;
+    background-color: white;
+    align-items: center;
+}
+.container-quien-soy img{
+    width: 400px;
+    height: auto;
+}
+.quien-soy{
+    text-align:start;
+    padding-top: 1em;
+    max-width: 60%;
+    color: black;
+}
+
+
+
+
+
+.mis-habilidades{
+    width:100%px;
+    height: auto;
+   
+    align-items: center;
+    justify-content:center;
+    display: flex;
+    flex-direction: column;
+    padding:12rem 0;
+}
+.contenido{
+    max-width:90%;
+    margin: auto;
+}
+.contenido h1{
+    text-align: center;
+    margin-bottom:20px;
+    color: white;
+}
+.contenido p{
+    color: white;
+    width:70%;
+    margin: auto;
+    margin-bottom:40px;
+}
+
+.caja-habilidades{
+    width:90%;
+    margin: auto;
+    height:auto;
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+    padding:2rem;
+    align-items: center;
+    border: 1px solid rgb(15, 144, 167);
+
+}
+.habilidades-adobe{
+    width:30%;
+    text-align:end;
+}
+.habilidades-adobe h6{
+    color: white;
+    font-size: 20px;
+}
+.barra-caja-habilidades{
+    width:80% ;
+    align-items: center;
+}
+
+.barra-de-progreso{
+    background-color: #00b7ff;
+    width:900px ;
+    height:300px;
+    justify-content: center;
+    display: flex;
+    flex-direction:column;
+}
+.progress {
+    height: 35px;
+    width: 50%;
+    border: 1px solid #428bca;
+    border-radius: 5px;
+    background-color: #e6f3fa;
+    margin-bottom:5px;
+    margin: 10px auto;
+}
+ 
+.progress-bar {
+    height: 100%;
+    background: #428bca;
+    display: flex;
+    align-items: center;
+    transition: width 0.25s;
+    border-radius: 5px;
+}
+ 
+.progress-bar-text {
+    margin-left: 10px;
+    font-weight: bold;
+    color: #cce7f5;
+}
+
+
+.fotografia-quienes--somos{
+    background:url(fotos/mirar\ portafolio.jpg)  no-repeat;
+    background-position:center;
+    background-size:cover;
+    background-attachment: fixed;
+    width:100%;
+    height:900px;
+    object-fit:contain ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.fotografia-quienes--somos-hijo{
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    
+}
+.titulo-fotografia{
+    color: rgb(255, 255, 255);
+    font-size:1rem;
+    text-transform:bold;
+    text-align: center;
+    font-family: 'Tilt Neon', cursive;
+}
+.texto-fotografia{
+    color: #5dd1ff;
+    font-size:2rem;
+}
+
+
+
+
+
+
+.span{
+    color: #00b7ff;
+    text-decoration: none;
+}
+
+.portafolio2{
+    background-color:#059ad5;
+    border: none;
+    color: white;
+    padding: 10px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    width:250px ;
+    margin-top:10px ;
+}
+.portafolio2 a{
+    color: white;
+    font-size:20px;
+    text-decoration: none;
+}
+.portafolio2:hover{
+    background-color:#036992;
+
+}
+
+
+
+
+@media screen and (max-width:400px){
+    .bienvenida-quienes-somos{
+    
+        display: flex;
+        flex-direction:column;
+        padding:0;
+        height:600px ;
+    }
+    .quienes-somos{
+        width:100%;
+        display: flex;
+        flex-direction:column;
+    }
+    .imagen-discraft img{
+        width:200px;
+    }
+    .content-welcome P{
+        width:100%;
+    }
+    .container-quien-soy{
+    
+        max-width:100%;
+        height:40em;
+        display: flex;
+        flex-direction:column;
+    }
+    .container-quien-soy img{
+        width: 250px;
+        height: auto;
+    }
+    .quien-soy{
+        text-align:center;
+        padding-top: 1em;
+        max-width: 60%;
+        color: black;
+    }
+    .habilidades-adobe{
+        width:30%;
+        text-align:end;
+    }
+    .habilidades-adobe h6{
+        color: white;
+        font-size:10px;
+    }
+}
